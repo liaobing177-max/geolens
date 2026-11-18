@@ -1,0 +1,246 @@
+{
+  "title": "中国企业东南亚布局的政策冲击风险比较研究",
+  "subtitle": "基于 PSR 指数的路径情景与稳健性分析",
+  "meta": "风险感知与地平线扫描研究方向　研究基准 2023 年　政策核验截至 2026 年 10 月 12 日",
+  "abstract": "中国企业经东南亚生产或中转进入海外市场，能否降低政策风险，需要区分国别经营环境与产品准入规则。本文以政策冲击风险指数（PSR）为主指标，使用主办方托管数据视图形成的交接数据包，对 7 个东南亚经济体与 9 个目标市场的 63 条路径开展情景比较，并以固定共同项和逐项剔除检验评估指标选择的影响。原 PSR 口径下，44 条路径的模型分差为负；但美国目标市场下，越南、马来西亚和菲律宾的分差在共同项对照中由负转正。光伏贸易救济案例进一步表明，第三国生产仍可能受到终端市场的产品级限制。研究结果支持将 PSR 用于国家初筛，并在资本投入前完成原产地、案件适用与现金流核验；现有模型尚不能识别路径选择的因果效果或预测投资回报。",
+  "keywords": "中国企业出海；东南亚布局；政策冲击风险；贸易救济；稳健性检验",
+  "blocks": [
+    {
+      "type": "figure",
+      "file": "01-overview.png",
+      "caption": "图 1 研究动机与分析思路",
+      "note": "历史指标用于国别筛选与模型比较；官方政策案例用于机制分析，两类证据共同服务于项目尽调。"
+    },
+    {
+      "type": "heading",
+      "text": "1 引言"
+    },
+    {
+      "type": "paragraph",
+      "text": "第三国布局常被用于分散市场与供应链约束，但经营地点改变并不必然改变终端市场的政策适用。对中国企业而言，东南亚既可能提供新的经营条件，也可能增加投资审查、当地制度与跨境合规暴露。本文围绕两个问题展开：在同一目标市场下，经不同东南亚经济体布局的模型分数有何差异；这种差异是否依赖指标集合与缺失处理。"
+    },
+    {
+      "type": "paragraph",
+      "text": "本文将政策冲击风险界定为东道国或终端市场的政策变化使既定布局面临成本增加、市场准入收紧或调整受阻的风险。PSR 以制度条件、历史政策压力和调整能力作为测量代理。研究结合美国对东南亚光伏产品的官方贸易救济文件讨论风险传导机制，不将国别分数解释为未来冲击概率。"
+    },
+    {
+      "type": "heading",
+      "text": "2 数据与指标体系"
+    },
+    {
+      "type": "subheading",
+      "text": "2.1 数据来源与研究样本"
+    },
+    {
+      "type": "paragraph",
+      "text": "数据来自主办方风险数据库目录所列的托管加工视图及其交接数据包［1］。包内列示 15 个来源，其中 11 个形成 14 项指标，Atlas 贸易指标用于样本筛选；美国综合出口管制清单与 OFAC 清单作为背景，该次 Global Trade Alert 视图因关键经济体覆盖不完整被排除。本文直接使用已导出的指标值、百分位分数和年份，复算汇总及路径结果，未重新取得各提供方的全量原始记录。"
+    },
+    {
+      "type": "paragraph",
+      "text": "原研究样本为按贸易规模与研究对象确定的 51 个经济体。路径比较包含越南、泰国、马来西亚、印度尼西亚、柬埔寨、菲律宾和新加坡，以及美国、德国、荷兰、英国、加拿大、澳大利亚、墨西哥、印度和巴西，共 63 组组合。样本为目的性选择，本文报告描述性差异，不向全部企业或全球市场作统计推断。"
+    },
+    {
+      "type": "subheading",
+      "text": "2.2 指标定义与合成方法"
+    },
+    {
+      "type": "paragraph",
+      "text": "PSR 包含准入与合规、供应链与贸易、政社压力与调整能力三个维度。各项采用原包已经完成方向统一的百分位分数，取值 0—100，较高值表示该口径下的相对约束较强。原始变量的风险方向与共同项保留情况见表 1。FDIRRI 测量外资法律限制，产业政策计数与法治指标分别提供政策和制度背景［2—4］。"
+    },
+    {
+      "type": "table",
+      "kind": "indicators",
+      "caption": "表 1 PSR 指标构成与共同项对照"
+    },
+    {
+      "type": "paragraph",
+      "text": "令 Sᵢ(c) 为国家 c 的第 i 项标准化分数，O_c 为该国非缺失指标集合，wᵢ 为指标权重。PSR 按式（1）汇总。主分析使用等权方案，熵值法与 CRITIC 为原包保留的替代权重。等权是对可用指标等权，而非三个维度各占三分之一；缺失项不补零，其余权重重新归一。"
+    },
+    {
+      "type": "equation",
+      "kind": "psr",
+      "number": 1
+    },
+    {
+      "type": "paragraph",
+      "text": "逐国复算 230 个包内实体后，等权结果与存储分数的最大差为 0.005 分，符合舍入精度。这仅验证汇总一致性。指标的有效样本池、上游采集和百分位生成过程仍需原始脚本核查。"
+    },
+    {
+      "type": "heading",
+      "text": "3 路径情景与检验设计"
+    },
+    {
+      "type": "subheading",
+      "text": "3.1 路径模型"
+    },
+    {
+      "type": "paragraph",
+      "text": "以目标市场 m 的 PSR 作为直接进入基准，东南亚中转地记为 h。模型将经中转分数设为目标市场与中转地分数的加权组合（式 2），相对直接进入的分差为式（3）。α 表示假设的中转地暴露权重，基准取原项目设定的 0.45，未经企业数据估计。"
+    },
+    {
+      "type": "equation",
+      "kind": "route",
+      "number": 2
+    },
+    {
+      "type": "equation",
+      "kind": "delta",
+      "number": 3
+    },
+    {
+      "type": "paragraph",
+      "text": "负分差表示模型分数较低，正分差表示较高。式（3）表明，只要 α 大于零，调整权重仅缩放分差，不改变方向。因此，路径结果是国别环境的假设比较，不能识别第三国布局的因果效应，也不能据此推算减税收益。直接进入基准尚未测量中国企业、产品与工艺的全部敞口。"
+    },
+    {
+      "type": "subheading",
+      "text": "3.2 共同项与逐项剔除检验"
+    },
+    {
+      "type": "paragraph",
+      "text": "为检验国别缺失差异的影响，本文从 14 项中选取 16 个路径经济体均有数据、且观测年份在 2020—2023 年的固定 8 项，沿用其百分位分数重新等权平均。共同项为 A1、A4、B1、B2b、B3、C1、C2、C4，来自 6 个数据库。除 C1 为 2021 年，其余为 2023 年。"
+    },
+    {
+      "type": "paragraph",
+      "text": "共同项是替代口径的稳健性对照，保留较一致的比较集合，同时移除了投资审查、对华制裁、贸易救济存量、关税和社会动员相关项。它缩小了 PSR 的概念覆盖，不能取代主指标。随后每次对所有比较国家统一删除一个共同项，重算剩余七项均值及路径分差；八次结果的最小值与最大值构成敏感性范围，而非统计置信区间。"
+    },
+    {
+      "type": "heading",
+      "text": "4 比较结果与稳健性"
+    },
+    {
+      "type": "subheading",
+      "text": "4.1 原 PSR 的路径差异"
+    },
+    {
+      "type": "paragraph",
+      "text": "原等权 PSR 下，东南亚组均值为 54.2，目标市场组为 61.6，差约 7.5 分。63 条路径中 44 条模型分差为负，19 条为正（图 2）。优势并非普遍存在，例如泰国和印度尼西亚的 PSR 分别为 65.88 和 62.52，高于美国的 61.64，也高于部分欧洲目标市场。组均值不能替代具体路径判断。"
+    },
+    {
+      "type": "figure",
+      "file": "02-original-path-heatmap.png",
+      "caption": "图 2 原 PSR 口径下的 63 条路径模型分差",
+      "note": "Δ = 0.45 ×［PSR（中转地）− PSR（目标市场）］；单位为分数点，非税率、概率或收益率。"
+    },
+    {
+      "type": "paragraph",
+      "text": "美国目标市场下，新加坡与柬埔寨的原模型分差分别为 −12.72 和 −5.63，越南、马来西亚、菲律宾也为负值（表 2）。但美国覆盖 13 项，东南亚经济体仅覆盖 10—12 项，较低分数可能受指标构成影响。PRISM 对东南亚系统性缺失不能解释为不存在投资审查。"
+    },
+    {
+      "type": "table",
+      "kind": "usa",
+      "caption": "表 2 美国目标市场的 PSR 与共同项结果"
+    },
+    {
+      "type": "subheading",
+      "text": "4.2 指标口径改变部分路径的判断"
+    },
+    {
+      "type": "paragraph",
+      "text": "共同项对照中，美国分数为 59.65，越南、马来西亚和菲律宾分别为 60.81、62.14 和 62.09；三国分差变为 +0.52、+1.12 和 +1.10，由原口径的负值转为正值（图 3）。七国原 PSR 与共同项排序的 Spearman 相关仍为 0.929，说明总体排名相近并不能保证具体路径的判断一致。反转反映测量口径变化，不代表现实风险上升。"
+    },
+    {
+      "type": "figure",
+      "file": "03-usa-original-common.png",
+      "caption": "图 3 美国目标市场的原 PSR 与共同项路径分差",
+      "note": "两种口径均设 α = 0.45。共同项只用于敏感性对照，不作为新的完整风险指数。"
+    },
+    {
+      "type": "paragraph",
+      "text": "逐项剔除后，越南、马来西亚、菲律宾和印度尼西亚的分差范围跨零，新加坡、柬埔寨保持负值，泰国保持正值（图 4）。这支持区分方向较稳定的描述性结果与口径敏感的微小差距。后者不足以支持严格的投资优劣排序。稳定结果也只对当前样本、指标及检验方式成立。"
+    },
+    {
+      "type": "figure",
+      "file": "04-usa-leave-one-out.png",
+      "caption": "图 4 共同项逐项剔除的敏感性范围",
+      "note": "横线为八次确定性重算的最小值至最大值，不是置信区间；参考点标示原 PSR 分差。α 固定为 0.45。"
+    },
+    {
+      "type": "heading",
+      "text": "5 政策案例与企业启示"
+    },
+    {
+      "type": "paragraph",
+      "text": "美国光伏贸易救济案件说明国别经营条件之外仍存在产品级约束。2023 年反规避终裁涉及在柬埔寨、马来西亚、泰国和越南使用指定中国零部件及加工条件生产后输美的部分光伏产品，并保留企业例外和认证条件［5］。2025 年四国光伏反倾销与反补贴命令进一步表明，东南亚原产产品也可能面临新的贸易救济措施［6—7］。案例证明风险机制存在，未验证 PSR 对具体案件的预测能力。"
+    },
+    {
+      "type": "paragraph",
+      "text": "政策适用还取决于企业身份、商品范围和进口日期。2026 年 8 月启动的相关行政复审是程序进展，不等于新的终裁税率［8］。另据 2026 年 2 月白宫命令与 CBP 通知，相关 IEEPA 额外税自 2 月 24 日停止征收，其他法律依据下的税项不因此取消［9—10］。历史税率不能直接作为当期投资假设。"
+    },
+    {
+      "type": "paragraph",
+      "text": "由此，PSR 宜用于确定尽调候选与待核查事项。新加坡的较低分数支持将其纳入区域经营候选，但尚未测量制造成本和产能条件。柬埔寨虽然总分较低，其法治不足项的风险百分位为 99.28；较少的政策记录与较弱的制度条件可以同时存在。越南、马来西亚和菲律宾应优先补充产品与工艺信息，再判断原有模型优势能否落实。"
+    },
+    {
+      "type": "paragraph",
+      "text": "项目进入投资评估时，应固定企业、产品或 HS 编码、生产工艺、目的地和决策日期，核验原产地与贸易救济适用范围。将适用税费、当地新增成本及对美收入集中度纳入现金流压力测试，并在订单与合规条件确认后分期配置不可逆产能。本文没有企业财务数据，不给出投资回报率、净现值或投入规模的数值结论。"
+    },
+    {
+      "type": "heading",
+      "text": "6 结论与局限"
+    },
+    {
+      "type": "paragraph",
+      "text": "原 PSR 的情景比较显示，东南亚路径优势具有国别差异；共同项及逐项剔除检验则表明，部分优势对指标选择敏感。国别筛选与产品级政策核验需要结合，单一综合分数不足以决定制造业选址或判断第三国布局是否降低税负。"
+    },
+    {
+      "type": "paragraph",
+      "text": "研究主要受三方面限制。其一，2023 基准包含更早观测，如贸易壁垒截至 2013 年、菲律宾关税来自 1992 年；共同项只能改善所选集合的一致性，不能更新政策。其二，产业政策总数与子类别可能重复反映同一信号，协定数量和外交投票也只是代理变量，概念效度仍待检验。其三，路径权重未估计，缺少产品与企业结果，尚无法进行独立预测回测。原包的同源相关及权重诊断不构成独立的强效度证据。"
+    },
+    {
+      "type": "paragraph",
+      "text": "AI 在本研究中用于方法审查、可复算对照、官方证据检索与图表制作。本文未报告未经实施的文本编码准确率或自动预警效果。后续应建立产品级路径数据，按事先确定的预测时点，用实际限制事件与企业成本评估测量效度。"
+    }
+  ],
+  "references": [
+    {
+      "number": 1,
+      "text": "北京大学风险政治分析实验室. 企业全球化地缘政治风险数据库［DB/OL］. ［2026-10-12］.",
+      "url": "https://riskalab-databank.vercel.app/risk-databases"
+    },
+    {
+      "number": 2,
+      "text": "OECD; 北京大学风险政治分析实验室托管. OECD FDI Regulatory Restrictiveness Index［DB/OL］. 来源标记2024, 观测2023. ［2026-10-12］.",
+      "url": "https://riskalab-databank.vercel.app/library/oecd-fdi-rri"
+    },
+    {
+      "number": 3,
+      "text": "IMF; Global Trade Alert; 北京大学风险政治分析实验室托管. New Industrial Policy Observatory［DB/OL］. 来源标记2024. ［2026-10-12］.",
+      "url": "https://riskalab-databank.vercel.app/library/imf-nipo"
+    },
+    {
+      "number": 4,
+      "text": "World Justice Project; 北京大学风险政治分析实验室托管. Rule of Law Index［DB/OL］. 来源标记2021. ［2026-10-12］.",
+      "url": "https://riskalab-databank.vercel.app/library/wjp-rule-of-law"
+    },
+    {
+      "number": 5,
+      "text": "U.S. Department of Commerce. Antidumping and Countervailing Duty Orders on Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules, From the People's Republic of China: Final Scope Determination and Final Affirmative Determinations of Circumvention With Respect to Cambodia, Malaysia, Thailand, and Vietnam［EB/OL］. Federal Register, 88 FR 57419–57433, 2023-08-23. ［2026-10-12］.",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2023-08-23/html/2023-18161.htm"
+    },
+    {
+      "number": 6,
+      "text": "U.S. Department of Commerce. Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules From the Socialist Republic of Vietnam: Amended Final Antidumping Duty Determination; Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules From Cambodia, Malaysia, Thailand, and the Socialist Republic of Vietnam: Antidumping Duty Orders［EB/OL］. Federal Register, 90 FR 26786–26791, 2025-06-24. ［2026-10-12］.",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-06-24/html/2025-11588.htm"
+    },
+    {
+      "number": 7,
+      "text": "U.S. Department of Commerce. Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules, From Malaysia and Thailand: Amended Final Countervailing Duty Determinations; Crystalline Silicon Photovoltaic Cells, Whether or Not Assembled Into Modules, From Cambodia, Malaysia, Thailand, and the Socialist Republic of Vietnam: Countervailing Duty Orders［EB/OL］. Federal Register, 90 FR 26791–26798, 2025-06-24. ［2026-10-12］.",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-06-24/html/2025-11589.htm"
+    },
+    {
+      "number": 8,
+      "text": "U.S. Department of Commerce. Initiation of Antidumping and Countervailing Duty Administrative Reviews［EB/OL］. Federal Register, 91 FR 51436–51462, 2026-08-10. ［2026-10-12］.",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-08-10/html/2026-16265.htm"
+    },
+    {
+      "number": 9,
+      "text": "The White House. Ending Certain Tariff Actions Executive Order 14389［EB/OL］. 2026-02-20. ［2026-10-12］.",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/02/ending-certain-tariff-actions/"
+    },
+    {
+      "number": 10,
+      "text": "U.S. Customs and Border Protection. CSMS 67834313 Ending Collection of International Emergency Economic Powers Act Duties［EB/OL］. 2026-02-22. ［2026-10-12］.",
+      "url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/40b11c9"
+    }
+  ]
+}

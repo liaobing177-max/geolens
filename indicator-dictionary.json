@@ -1,0 +1,128 @@
+[
+  {
+    "key": "A1",
+    "dim": "A",
+    "name_zh": "外资准入限制",
+    "name_en": "FDI regulatory restrictiveness",
+    "dataset": "oecd-fdi-rri",
+    "direction": 1,
+    "unit": "0–1 指数"
+  },
+  {
+    "key": "A2",
+    "dim": "A",
+    "name_zh": "投资安全审查机制数量",
+    "name_en": "Investment screening mechanisms",
+    "dataset": "prism",
+    "direction": 1,
+    "unit": "计数"
+  },
+  {
+    "key": "A2b",
+    "dim": "A",
+    "name_zh": "审查法律变更频次(近5年)",
+    "name_en": "Screening law changes (5y)",
+    "dataset": "prism",
+    "direction": 1,
+    "unit": "计数"
+  },
+  {
+    "key": "A3",
+    "dim": "A",
+    "name_zh": "对华制裁案例数",
+    "name_en": "Sanction cases targeting China",
+    "dataset": "gsdb",
+    "direction": 1,
+    "unit": "计数"
+  },
+  {
+    "key": "A4",
+    "dim": "A",
+    "name_zh": "投资协定保护水平",
+    "name_en": "Investment treaty protection",
+    "dataset": "unctad-iia-bit",
+    "direction": -1,
+    "unit": "生效协定数"
+  },
+  {
+    "key": "B1",
+    "dim": "B",
+    "name_zh": "产业政策干预强度",
+    "name_en": "Industrial policy intervention",
+    "dataset": "imf-nipo",
+    "direction": 1,
+    "unit": "计数"
+  },
+  {
+    "key": "B2",
+    "dim": "B",
+    "name_zh": "贸易救济存量(反倾销+反补贴)",
+    "name_en": "AD/CVD stock",
+    "dataset": "temp-trade-barriers-bown",
+    "direction": 1,
+    "unit": "%"
+  },
+  {
+    "key": "B2b",
+    "dim": "B",
+    "name_zh": "贸易救济立案数",
+    "name_en": "AD/CVD/anti-circumvention cases",
+    "dataset": "imf-nipo",
+    "direction": 1,
+    "unit": "计数"
+  },
+  {
+    "key": "B3",
+    "dim": "B",
+    "name_zh": "本地化/出口管制类产业政策",
+    "name_en": "Localisation & export-control policy",
+    "dataset": "imf-nipo",
+    "direction": 1,
+    "unit": "计数"
+  },
+  {
+    "key": "B4",
+    "dim": "B",
+    "name_zh": "最惠国适用关税",
+    "name_en": "MFN applied tariff",
+    "dataset": "wits-tariffs",
+    "direction": 1,
+    "unit": "%"
+  },
+  {
+    "key": "C1",
+    "dim": "C",
+    "name_zh": "政策可预期性不足",
+    "name_en": "Policy predictability deficit",
+    "dataset": "wjp-rule-of-law",
+    "direction": -1,
+    "unit": "1-法治分"
+  },
+  {
+    "key": "C2",
+    "dim": "C",
+    "name_zh": "对华立场疏离度",
+    "name_en": "Alignment distance from China",
+    "dataset": "unga-ideal-points",
+    "direction": -1,
+    "unit": "1-一致度"
+  },
+  {
+    "key": "C3",
+    "dim": "C",
+    "name_zh": "社会动员强度",
+    "name_en": "Social mobilisation intensity",
+    "dataset": "mass-mobilization",
+    "direction": 1,
+    "unit": "抗议/年"
+  },
+  {
+    "key": "C4",
+    "dim": "C",
+    "name_zh": "资本退出受限",
+    "name_en": "Capital-exit restriction",
+    "dataset": "chinn-ito-kaopen",
+    "direction": -1,
+    "unit": "1-开放度"
+  }
+]

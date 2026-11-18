@@ -1,0 +1,330 @@
+[
+  {
+    "slug": "oecd-fdi-rri",
+    "title": "OECD FDI Regulatory Restrictiveness Index",
+    "title_zh": "经合组织外商直接投资监管限制指数",
+    "archetype": "panel",
+    "category": "国际政治经济与全球化",
+    "subfield": "投资、跨国资本与FDI",
+    "overview": "This dataset is the OECD FDI Regulatory Restrictiveness Index (FDIRRI) for 2023, covering multiple OECD and partner economies. The index quantifies legal and regulatory barriers to foreign direct investment across 22 economic sectors, measuring four types of restrictions: foreign equity caps, screening mechanisms, limits on key foreign personnel, and other operational constraints. Index scores range from 0 (fully open to foreign capital) to 1 (fully closed), with the aggregate national total index weighted by sectoral economic output to reflect overall investment openness of a country.",
+    "overview_zh": "本数据集为经合组织 2023 年外商直接投资监管限制指数（FDIRRI），覆盖多个 OECD 成员国及伙伴经济体。该指数量化 22 个经济行业的外资准入法律监管壁垒，从外资持股限制、投资审查、外籍核心人员管控、其他运营限制四大维度测算得分；指数取值区间 0 至 1，数值越高代表外资准入壁垒越高。各国总指数依据各行业经济权重加权计算，用于综合衡量一国整体外商投资开放水平，是国际政治经济、外资管制领域主流量化数据库。",
+    "source": {
+      "authors": "OECD",
+      "year": 2024,
+      "url": "https://www.oecd.org/en/topics/sub-issues/sustainable-investment/fdi-regulatory-restrictiveness-index.html",
+      "license": "CC BY 4.0 International (Creative Commons Attribution 4.0)."
+    },
+    "citation": " OECD FDI Regulatory Restrictiveness Index 2024",
+    "coverage": null,
+    "unit": null,
+    "rows": 520,
+    "url": "https://riskalab-databank.vercel.app/library/oecd-fdi-rri"
+  },
+  {
+    "slug": "prism",
+    "title": "PRISM Investment Screening Mechanisms Dataset",
+    "title_zh": "PRISM 外国投资审查机制数据",
+    "archetype": "panel",
+    "category": "国际政治经济与全球化",
+    "subfield": "投资、跨国资本与FDI",
+    "overview": "PRISM's ISM time-series file records investment-screening rules in OECD countries. The core panel covers 2007-2023; the source additionally contains three partial 2024 observations for France, Ireland, and Sweden. Each row is a country-year. has_screening_mechanism equals 1 when the source reports one or more mechanisms and 0 when it reports zero; missing values are never converted to zero. Selected companion fields describe mechanism count, legal changes, call-in power, and coverage.",
+    "overview_zh": "PRISM 的 ISM 时间序列文件记录 OECD 国家的外国投资审查规则。核心完整面板覆盖 2007-2023 年；源表另包含法国、爱尔兰和瑞典 3 条 2024 年部分记录。每行为一个国家-年份。has_screening_mechanism 在源数据报告一项或多项机制时为 1，报告零项时为 0；缺失值不被转换为 0。页面同时保留机制数量、法律变更、政府主动调查权和覆盖范围等核心维度。",
+    "source": {
+      "authors": "Sarah Bauerle Danzman and Sophie Meunier",
+      "year": 2023,
+      "url": "",
+      "license": "Academic Use",
+      "version": "2023.12 ISM Dataset; codebook updated 12 February 2023"
+    },
+    "citation": "Bauerle Danzman, Sarah, and Sophie Meunier. “Mapping the Characteristics of Foreign Investment Screening Mechanisms: The New PRISM Dataset.” International Studies Quarterly, vol. 67, no. 2, 2023.",
+    "coverage": {
+      "start_year": 2007,
+      "end_year": 2024,
+      "core_end_year": 2023,
+      "partial_extension_years": [
+        2024
+      ],
+      "scope": "OECD countries in the source time-series sheet; 2024 contains only France, Ireland, and Sweden"
+    },
+    "unit": "country-year",
+    "rows": 649,
+    "url": "https://riskalab-databank.vercel.app/library/prism"
+  },
+  {
+    "slug": "us-export-control-list",
+    "title": "US Consolidated Screening List (Export Controls)",
+    "title_zh": "美国综合出口管制清单",
+    "archetype": "registry",
+    "category": "国际关系、外交与国际组织",
+    "subfield": "制裁与胁迫",
+    "overview": "The Consolidated Screening List combines the U.S. government's export-control and sanctions screening lists (Entity List, Denied Persons, SDN, Debarred, and others) into a single registry of restricted parties. Each row is an individual, company, or vessel subject to license requirements or prohibitions.\nIt is a primary indicator of technology-blockade and market-access risk.",
+    "overview_zh": "美国综合出口管制清单将出口管制与制裁相关的多份名单（实体清单、拒绝人员、SDN、除名清单等）汇总为一个受限主体登记册。每一行是一个受许可要求或禁令约束的个人、企业或船只，是衡量技术封锁与市场准入风险的一手指标。",
+    "source": {
+      "authors": "U.S. International Trade Administration",
+      "year": 2025,
+      "url": "https://www.trade.gov/consolidated-screening-list",
+      "license": "U.S. Government public data"
+    },
+    "citation": "U.S. Department of Commerce, International Trade Administration. Consolidated Screening List.",
+    "coverage": null,
+    "unit": null,
+    "rows": 25757,
+    "url": "https://riskalab-databank.vercel.app/library/us-export-control-list"
+  },
+  {
+    "slug": "gsdb",
+    "title": "Global Sanctions Database (GSDB), Release 4",
+    "title_zh": "全球制裁数据库（GSDB）第 4 版",
+    "archetype": "dyadic",
+    "category": "国际关系、外交与国际组织",
+    "subfield": "制裁与胁迫",
+    "overview": "GSDB Release 4 records sanctions imposed by sender actors on target actors. This compact hosted view is built from the official case-level file and retains one observation per sanction case-sender-target combination, using the official begin and end years. Explicit comma-separated sender or target lists are split into actors; named multilateral organizations and collective groups remain single actors because the case file identifies them collectively. The annual dyad-year expansion is not included.",
+    "overview_zh": "GSDB 第 4 版记录制裁发起方与目标方之间的制裁关系。本页使用官方案例级文件，每行为一个“制裁案例—发起方—目标方”组合，并直接保留官方起止年份。明确列举的多发起方或多目标方名单已拆分；以国际组织或集合性集团名义记录的行为体仍作为单一节点保留。页面不再展开逐年 dyad-year 记录。",
+    "source": {
+      "authors": "Erdal Yalcin; Gabriel Felbermayr; Heider Kariem; Aleksandra Kirilakha; Ohyun Kwon; Constantinos Syropoulos; Yoto V. Yotov",
+      "year": 2025,
+      "url": "https://globalsanctionsdatabase.com/",
+      "license": "Received directly from the GSDB team for academic use",
+      "version": "Release 4"
+    },
+    "citation": "Felbermayr, G., Kirilakha, A., Syropoulos, C., Yalcin, E., & Yotov, Y. V. (2020). The Global Sanctions Data Base. European Economic Review, 129. Yalcin, E., Felbermayr, G., Kariem, H., Kirilakha, A., Kwon, O., Syropoulos, C., & Yotov, Y. V. (2025). The Global Sanctions Data Base—Release 4: The Heterogeneous Effects of the Sanctions on Russia. The World Economy.",
+    "coverage": {
+      "start_year": 1949,
+      "end_year": 2023
+    },
+    "unit": "sanction case-sender-target",
+    "rows": 2247,
+    "url": "https://riskalab-databank.vercel.app/library/gsdb"
+  },
+  {
+    "slug": "global-trade-alert",
+    "title": "Global Trade Alert (GTA) — Trade Intervention Measures",
+    "title_zh": "全球贸易预警 (GTA) — 贸易干预措施数据库",
+    "archetype": "events",
+    "category": "国际政治经济与全球化",
+    "subfield": "贸易流量与贸易政策",
+    "overview": "The Global Trade Alert (GTA) database records discriminatory trade and industrial policy interventions implemented by governments worldwide. Covering 2008–2026, it catalogs 3,656 intervention measures across 123 implementing jurisdictions, classified by type (anti-dumping, subsidies, import bans, public procurement restrictions, etc.) and evaluated by discriminatory impact (Red/Amber/Green).\nEach entry records the implementing and affected jurisdictions, intervention type under the GTA Mast Chapter classification, affected sectors (HS codes), and announcement/implementation/removal dates. It is a leading resource for monitoring protectionism and trade-policy risk worldwide.",
+    "overview_zh": "全球贸易预警（GTA）数据库记录了各国政府实施的歧视性贸易和产业政策措施。覆盖 2008–2026 年，收录 3,656 项干预措施，涉及 123 个实施方，按类型分类（反倾销、补贴、进口禁令、公共采购限制等）并按歧视性影响评级（红/琥珀/绿）。\n每条记录包含实施方与受影响方、GTA 分类章节下的措施类型、受影响行业（HS编码）以及公告/实施/撤销日期，是全球监测贸易保护主义与贸易政策风险的主要数据源。",
+    "source": {
+      "authors": "Evenett, Simon J. and Johannes Fritz",
+      "year": 2026,
+      "url": "https://www.globaltradealert.org/",
+      "license": "Free for academic use (registration required for data download)"
+    },
+    "citation": "Evenett, Simon J. and Johannes Fritz. Global Trade Alert (2026). https://www.globaltradealert.org/",
+    "coverage": null,
+    "unit": null,
+    "rows": 3656,
+    "url": "https://riskalab-databank.vercel.app/library/global-trade-alert"
+  },
+  {
+    "slug": "temp-trade-barriers-bown",
+    "title": "Temporary Trade Barriers Database (Bown / World Bank)",
+    "title_zh": "临时贸易壁垒数据库 (Bown/世界银行)",
+    "archetype": "panel",
+    "category": "国际政治经济与全球化",
+    "subfield": "贸易流量与贸易政策",
+    "overview": "$20",
+    "overview_zh": "临时贸易壁垒数据库（TTBD）由世界银行 Chad P. Bown 主持建立，系统记录主要 WTO 成员1990-2013 年使用的临时性贸易救济措施：反倾销（AD）、反补贴税（CVD）与保障措施（SG）。与永久关税不同，这些措施针对特定产品和出口国实施，经调查后可撤销。历史数据系列报告各年度在实施的临时贸易壁垒存量，以简单平均关税当量（%）表示，涵盖 34 个进口国。\n本数据集是评估贸易保护主义风险的核心依据：TTB 存量体现出口企业进入目标市场所承受的累计保护负担；反倾销/反补贴税存量上升，表明出口产品遭受贸易救济措施的风险增大；保障措施的启动则反映更大范围的进口冲击应对。跨国跨年对比可识别哪些市场最易启动临时性贸易限制。",
+    "source": {
+      "authors": "Bown, Chad P.",
+      "year": 2014,
+      "url": "https://www.worldbank.org/en/research/brief/temporary-trade-barriers-database",
+      "license": "Free for academic use; cite author and World Bank"
+    },
+    "citation": "Bown, Chad P. (2014). Temporary Trade Barriers Database. The World Bank. Available at: https://www.worldbank.org/en/research/brief/temporary-trade-barriers-database",
+    "coverage": null,
+    "unit": null,
+    "rows": 690,
+    "url": "https://riskalab-databank.vercel.app/library/temp-trade-barriers-bown"
+  },
+  {
+    "slug": "imf-nipo",
+    "title": "IMF New Industrial Policy Observatory (NIPO)",
+    "title_zh": "IMF 新产业政策观察 (NIPO)",
+    "archetype": "events",
+    "category": "国际政治经济与全球化",
+    "subfield": "贸易流量与贸易政策",
+    "overview": "The New Industrial Policy Observatory records government interventions coded as industrial policy — subsidies, tax breaks, loans, export controls, localisation requirements, procurement measures and more — drawn from the Global Trade Alert database. Each event is one measure (Intervention ID), tagged with the implementing jurisdiction, intervention type, MAST chapter, inception date and GTA evaluation (harmful / liberalising). Announced measures can carry scheduled future inception dates, so the timeline may extend beyond the access year.\nIt is a leading source for tracking the direction and intensity of industrial policy and the risk of industrial-policy reversals.",
+    "overview_zh": "新产业政策观察记录各国被编码为产业政策的政府干预措施——补贴、税收优惠、贷款、出口管制、本地化要求、政府采购等——数据来自 Global Trade Alert 数据库。每个事件为一项措施（Intervention ID），标注实施辖区、干预类型、MAST 章节、生效日期与 GTA 评定（有害/自由化）。已宣布的措施可能采用未来计划生效日期，因此时间轴可能延伸至数据访问年份之后。\n该数据是追踪产业政策方向与力度、评估产业政策逆转风险的重要来源。",
+    "source": {
+      "authors": "IMF; Global Trade Alert (Evenett et al.)",
+      "year": 2024,
+      "url": "https://www.imf.org/en/Topics/Industrial-Policy",
+      "license": "Public; follow IMF / Global Trade Alert citation & reuse terms"
+    },
+    "citation": "IMF, New Industrial Policy Observatory (NIPO), built on the Global Trade Alert database (Evenett et al.). Accessed 2026.",
+    "coverage": null,
+    "unit": null,
+    "rows": 70281,
+    "url": "https://riskalab-databank.vercel.app/library/imf-nipo"
+  },
+  {
+    "slug": "wits-tariffs",
+    "title": "WITS TRAINS — MFN Applied Tariffs",
+    "title_zh": "WITS TRAINS 最惠国适用关税",
+    "archetype": "panel",
+    "category": "国际政治经济与全球化",
+    "subfield": "贸易流量与贸易政策",
+    "overview": "Country-year panel of the simple-average Most-Favoured-Nation (MFN) applied tariff, built from the World Bank WITS / UNCTAD TRAINS product-line tariff files (ad-valorem equivalents included). Each observation is a reporting economy in a given year; the value is the unweighted mean of the applied tariff across all HS product lines reported that year.\nThe series is a standard measure of an economy's overall tariff protection and supports analysis of trade-protectionism and supply-chain risk.",
+    "overview_zh": "各国-年度最惠国（MFN）适用关税简单平均面板，来自世界银行 WITS / UNCTAD TRAINS 的产品线级关税数据（含从价等值 AVE）。每个观测为某报告经济体在某一年，其数值为该年所有 HS 产品线适用关税的算术平均。\n该指标是衡量一国整体关税保护水平的标准变量，可用于贸易保护主义与供应链风险分析。",
+    "source": {
+      "authors": "World Bank; UNCTAD TRAINS",
+      "year": 2024,
+      "url": "https://wits.worldbank.org/",
+      "license": "Free for academic use; cite World Bank WITS and underlying agencies"
+    },
+    "citation": "World Bank, World Integrated Trade Solution (WITS), TRAINS MFN Applied Rates (including AVE). Accessed 2026.",
+    "coverage": null,
+    "unit": null,
+    "rows": 2015,
+    "url": "https://riskalab-databank.vercel.app/library/wits-tariffs"
+  },
+  {
+    "slug": "wjp-rule-of-law",
+    "title": "World Justice Project Rule of Law Index",
+    "title_zh": "世界正义工程法治指数 (WJP Rule of Law Index)",
+    "archetype": "panel",
+    "category": "人权、镇压与法治",
+    "subfield": "法治与司法",
+    "overview": "The World Justice Project (WJP) Rule of Law Index measures rule-of-law performance across 140 countries and jurisdictions through large-scale household and expert surveys. It is the world's leading source for original, independent data on the rule of law.\nThe index evaluates eight dimensions: Constraints on Government Powers, Absence of Corruption, Open Government, Fundamental Rights, Order and Security, Regulatory Enforcement, Civil Justice, and Criminal Justice. Each is scored on a 0–1 scale where higher values indicate stronger adherence to the rule of law.",
+    "overview_zh": "世界正义工程（WJP）法治指数基于对各国普通民众和法律专家的大规模问卷调查，从体验和感知角度衡量全球约140个国家和司法辖区的法治状况，是国际上影响力最大的法治量化评估之一。\n该指数围绕八大维度进行评分：约束政府权力、廉洁/反腐败、政府开放、基本权利、秩序与安全、监管执行、民事司法和刑事司法，分值范围为0–1，分数越高代表法治状况越好。",
+    "source": {
+      "authors": "World Justice Project",
+      "year": 2021,
+      "url": "https://worldjusticeproject.org/rule-of-law-index/",
+      "license": "Free for non-commercial use with attribution"
+    },
+    "citation": "World Justice Project. Rule of Law Index 2021. Washington, D.C.: World Justice Project.",
+    "coverage": null,
+    "unit": null,
+    "rows": 917,
+    "url": "https://riskalab-databank.vercel.app/library/wjp-rule-of-law"
+  },
+  {
+    "slug": "unga-ideal-points",
+    "title": "UNGA Voting Ideal Points (Bailey-Strezhnev-Voeten)",
+    "title_zh": "联合国大会投票理想点 (Bailey-Strezhnev-Voeten)",
+    "archetype": "panel",
+    "category": "国际关系、外交与国际组织",
+    "subfield": "联盟、外交与国家偏好",
+    "overview": "This dataset provides annual ideal-point estimates for virtually all UN member states from 1946 to 2023, derived from roll-call voting records in the UN General Assembly (UNGA). Using a dynamic Bayesian item-response theory (IRT) model, each country-year is assigned a latent position on a single dimension: higher values indicate alignment with the United States and Western democracies, while lower values indicate alignment with the developing-world consensus. The dataset also reports bilateral voting-agreement scores with major powers (US, China, Russia).\nDeveloped by Michael A. Bailey, Anton Strezhnev, and Erik Voeten, this is the standard benchmark for measuring state foreign-policy preferences in international organizations research. It is a direct indicator of institutional polarization risk: a country's ideal point captures how closely it aligns—or diverges—from the dominant blocs in multilateral settings, signalling potential exposure to bloc-based sanctions or diplomatic isolation.",
+    "overview_zh": "本数据集利用联合国大会（UNGA）历届记名投票，通过动态贝叶斯项目反应理论（IRT）模型，估计 1946-2023 年几乎所有联合国会员国的年度理想点（ideal point）。理想点值越高，表明该国立场越接近美国及西方民主国家；值越低，则表明更趋近于发展中国家阵营共识。数据集同时提供各国与美国、中国、俄罗斯的双边投票一致度（Agreement Score）。\n该数据集由 Bailey、Strezhnev 与 Voeten 开发，是国际组织研究中衡量国家外交政策偏好的权威指标，直接反映制度阵营化风险——理想点可量化目标国在多边场合的阵营归属，预判其面临集团化制裁或外交孤立的潜在风险。",
+    "source": {
+      "authors": "Bailey, M. A., Strezhnev, A., & Voeten, E.",
+      "year": 2024,
+      "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/LEJUQZ",
+      "license": "CC0 / Harvard Dataverse Terms of Use"
+    },
+    "citation": "Bailey, M. A., Strezhnev, A., & Voeten, E. (2017). Estimating Dynamic State Preferences from United Nations Voting Data. Journal of Conflict Resolution, 61(2), 430–456.",
+    "coverage": null,
+    "unit": null,
+    "rows": 11039,
+    "url": "https://riskalab-databank.vercel.app/library/unga-ideal-points"
+  },
+  {
+    "slug": "chinn-ito-kaopen",
+    "title": "Chinn-Ito Capital Account Openness (KAOPEN)",
+    "title_zh": "Chinn-Ito 资本账户开放度指数 (KAOPEN)",
+    "archetype": "panel",
+    "category": "政治制度与比较政治经济",
+    "subfield": "财政、税收与央行",
+    "overview": "KAOPEN is a de jure index of a country's degree of capital-account openness, covering 185 economies from 1970 to 2023. It is built from the binary IMF AREAER indicators on cross-border financial transactions; higher values mean fewer restrictions on capital flows.\nThe companion variable ka_open is the same measure rescaled to the 0–1 range. The index is one of the most widely used measures of financial globalization in political economy and is a core input for analysing sunk-cost / capital-control risk.",
+    "overview_zh": "KAOPEN 是衡量一国资本账户开放程度的法理（de jure）指数，覆盖 1970–2023 年共 185 个经济体。它基于 IMF《汇兑安排与汇兑限制年报》(AREAER) 中关于跨境金融交易的二元指标构建，取值越高代表对资本流动的限制越少。\n配套变量 ka_open 是同一度量重新缩放至 0–1 区间的版本。该指数是政治经济学中应用最广的金融全球化度量之一，也是分析沉没成本／资本管制风险的核心输入变量。",
+    "source": {
+      "authors": "Chinn, M. D. & Ito, H.",
+      "year": 2023,
+      "url": "https://web.pdx.edu/~ito/Chinn-Ito_website.htm",
+      "license": "Free for academic / non-commercial use (cite the source paper)"
+    },
+    "citation": "Chinn, M. D., & Ito, H. (2006). What Matters for Financial Development? Capital Controls, Institutions, and Interactions. Journal of Development Economics, 81(1), 163–192.",
+    "coverage": null,
+    "unit": null,
+    "rows": 9819,
+    "url": "https://riskalab-databank.vercel.app/library/chinn-ito-kaopen"
+  },
+  {
+    "slug": "mass-mobilization",
+    "title": "Mass Mobilization Project (Protests)",
+    "title_zh": "大规模动员项目（抗议事件）",
+    "archetype": "events",
+    "category": "舆论、传播与社会运动",
+    "subfield": "抗议与社会运动",
+    "overview": "The Mass Mobilization Project records protests against governments worldwide, 1990–2020, covering 162 countries. Each event captures the protesters' demands, size, whether violence occurred, and how the state responded.\nIt is a core source for studying social-unrest and political-instability risk.",
+    "overview_zh": "大规模动员项目记录了 1990–2020 年全球针对政府的抗议事件，覆盖 162 个国家，包含抗议诉求、规模、是否暴力以及政府回应，是研究社会动荡与政局失稳风险的核心数据。",
+    "source": {
+      "authors": "Clark, D. & Regan, P.",
+      "year": 2020,
+      "url": "https://massmobilization.github.io/",
+      "license": "Open / academic use"
+    },
+    "citation": "Clark, D., & Regan, P. (2016). Mass Mobilization Protest Data. Harvard Dataverse.",
+    "coverage": null,
+    "unit": null,
+    "rows": 15009,
+    "url": "https://riskalab-databank.vercel.app/library/mass-mobilization"
+  },
+  {
+    "slug": "ofac-sdn-list",
+    "title": "OFAC Specially Designated Nationals and Blocked Persons List",
+    "title_zh": "OFAC 特别指定国民与被封锁人员清单",
+    "archetype": "registry",
+    "category": "国际关系、外交与国际组织",
+    "subfield": "制裁与胁迫",
+    "overview": "The Specially Designated Nationals and Blocked Persons List, maintained by the U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC), identifies individuals, entities, vessels, and other parties subject to U.S. sanctions restrictions. Listed parties may be subject to asset freezes and transaction prohibitions involving U.S. persons.\n\nThis hosted registry version uses OFAC's CSV files and combines the main SDN table with address records, alternate names, and supplemental comments. The unit of observation is a listed SDN entry.",
+    "overview_zh": "OFAC 特别指定国民与被封锁人员清单由美国财政部海外资产控制办公室维护，列明受到美国制裁限制的个人、实体、船舶及其他对象。被列名对象通常可能面临资产冻结以及与美国主体交易受限等后果。\n\n本页面使用 OFAC 提供的 CSV 文件，将 SDN 主表与地址、别名和补充备注信息合并。观测单位是一条 SDN 登记记录。",
+    "source": {
+      "authors": "U.S. Department of the Treasury, Office of Foreign Assets Control",
+      "year": 2026,
+      "url": "https://sanctionslist.ofac.treas.gov/",
+      "license": "U.S. government public data"
+    },
+    "citation": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC). Specially Designated Nationals and Blocked Persons List. https://sanctionslist.ofac.treas.gov/",
+    "coverage": null,
+    "unit": null,
+    "rows": 19057,
+    "url": "https://riskalab-databank.vercel.app/library/ofac-sdn-list"
+  },
+  {
+    "slug": "unctad-iia-bit",
+    "title": "UNCTAD International Investment Agreements (IIA) Network — BIT & TIP",
+    "title_zh": "UNCTAD 国际投资协定网络 (BIT / TIP)",
+    "archetype": "dyadic",
+    "category": "国际政治经济与全球化",
+    "subfield": "投资、跨国资本与FDI",
+    "overview": "The UNCTAD IIA Navigator is the authoritative inventory of international investment agreements (IIAs). This dyadic dataset merges 520 UNCTAD per-country files (260 bilateral investment treaties, BITs, and 260 treaties with investment provisions, TIPs) into 3,770 unique country-pair treaties. Each row is a directed pair (home state → partner state) with the year of signature and the agreement type (BIT / TIP); multi-party treaties are decomposed into all pairwise links and de-duplicated as undirected pairs. Regional blocs (EU, ASEAN, EFTA, MERCOSUR, GCC, etc.) that sign IIAs are retained as synthetic nodes. It maps the global investment-protection treaty network and reveals where treaty coverage — and thus ISDS recourse — exists or has lapsed.",
+    "overview_zh": "UNCTAD 国际投资协定（IIA）导航器是全球投资协定的权威清单。本 dyadic 数据集将 UNCTAD 的 520 份各国文件（260 份双边投资协定 BIT 与 260 份含投资条款条约 TIP）合并为 3,770 个唯一国家间条约。每行是一个有向对（本国 → 伙伴国），含签署年份与协定类型（BIT / TIP）；多方条约拆分为所有两两链接并按无序对去重。签署 IIA 的区域集团（欧盟、东盟、EFTA、南方共同市场、海合会等）作为合成节点保留。它描绘了全球投资保护条约网络，揭示何处存在（或已失效）条约保护及 ISDS 救济渠道。",
+    "source": {
+      "authors": "UNCTAD Investment Policy Hub",
+      "year": 2025,
+      "url": "https://investmentpolicy.unctad.org/international-investment-agreements",
+      "license": "Free public data; cite UNCTAD"
+    },
+    "citation": "UNCTAD, International Investment Agreements Navigator, https://investmentpolicy.unctad.org/international-investment-agreements (accessed 2026-07-04).",
+    "coverage": null,
+    "unit": null,
+    "rows": 3770,
+    "url": "https://riskalab-databank.vercel.app/library/unctad-iia-bit"
+  },
+  {
+    "slug": "atlas-economic-complexity",
+    "title": "Atlas of Economic Complexity — Trade Indicators (HS92, 1995–2024)",
+    "title_zh": "经济复杂度地图集 — 贸易指标 (HS92, 1995–2024)",
+    "archetype": "panel",
+    "category": "国际政治经济与全球化",
+    "subfield": "贸易流量与贸易政策",
+    "overview": "The Atlas of Economic Complexity provides international trade data based on UN COMTRADE, cleaned via the Bustos-Yildirim method. This dataset aggregates bilateral HS92 trade flows to country-year level, covering 232 economies from 1995 to 2024.\nIndicators include total exports and imports (USD millions), trade balance, and the number of export/import partners — offering a comprehensive picture of each country's integration into global trade networks.",
+    "overview_zh": "经济复杂度地图集提供基于 UN COMTRADE 的国际双边贸易数据，经 Bustos-Yildirim 方法清洗。本数据集将 HS92 分类的双边贸易流汇总至国家-年份层面，覆盖 232 个经济体，时间跨度为 1995–2024 年。\n指标包括总出口和总进口（百万美元）、贸易差额以及进出口伙伴数量，全面呈现各国在全球贸易网络中的融入程度。",
+    "source": {
+      "authors": "The Growth Lab at Harvard University",
+      "year": 2025,
+      "url": "https://atlas.cid.harvard.edu/",
+      "license": "Open access (Harvard Dataverse, doi:10.7910/DVN/T4CHWJ)"
+    },
+    "citation": "The Atlas of Economic Complexity, Harvard Growth Lab. Data retrieved from Harvard Dataverse (doi:10.7910/DVN/T4CHWJ).",
+    "coverage": null,
+    "unit": null,
+    "rows": 6755,
+    "url": "https://riskalab-databank.vercel.app/library/atlas-economic-complexity"
+  }
+]

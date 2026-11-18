@@ -1,59 +1,27 @@
-# 东南亚跳板，真的更稳吗？
+# 研究报告
 
-面向中国企业跨境布局的研究展示页。由团队提供的 PSR 原型重构，主线为国别结构筛选、路径情景比较、行业政策证据与投资尽调。原文件保存在 `reference/`，没有覆盖用户提供的文件。
+最终交付位于 `output/`：可编辑 Word 与同版 PDF。
 
-## 使用
+- 正文来源：`research-report.json`。
+- 文档生成：`scripts/build_report.py`，包含原生 Word 公式与三线表。
+- 图表生成：`scripts/make_figures.py`，`figures/` 保留 PNG、PDF、SVG。
+- 独立审查：`review.md`。统计复算使用项目内 `research/original-data.json` 与 `assets/derived.js`。
 
-- `psr-refined-single-file.html`：全部代码、ECharts、数据与政策证据内嵌，双击离线打开。
-- `index.html` + `assets/`：可维护版，也支持本地静态服务器。
-- 网页默认展示原始 PSR，支持 9 个目标市场、7 个东南亚中转地、PSR／共同 8 项对照切换、权重假设、指标分解与逐项剔除检验。
-- CSV、JSON 与 PNG 导出；打印按钮可以通过浏览器保存 PDF。
-- 单位经济性工具使用可编辑示例，不查询真实税率，也不计算投资回报。
+报告以原 PSR 为主口径，共同八项仅作替代口径与逐项剔除检验。路径结果为设定权重下的国别分数比较，不表示税负、概率、因果效应或投资回报。
 
-## 计算与构建
+## 重新生成
 
-Python 3.9+，仅使用标准库，无需安装依赖。
+使用 Codex workspace dependency loader 返回的 Python 运行 `scripts/build_report.py`，再用 documents 技能中的 `render_docx.py` 导出 PDF 与页图。
 
-```bash
-python3 scripts/derive.py
-python3 scripts/verify.py
-python3 scripts/build_single.py
-python3 -m http.server 8766 --bind 127.0.0.1 --directory dist
+在本机 bundled LibreOffice 的 headless 环境中，需令 `FONTCONFIG_FILE` 指向本目录 `fontconfig.xml`，以读取系统宋体、黑体并使用可写字体缓存。移动项目后须同步修改配置中的缓存目录。此配置仅用于本次渲染，不安装字体或改变系统设置。
+
+导出命令形态：
+
+```sh
+FONTCONFIG_FILE="/absolute/project/report/fontconfig.xml" \
+  /bundled/python3 /documents/skill/render_docx.py \
+  report/output/东南亚布局政策风险研究报告.docx \
+  --output_dir report/render --emit_pdf
 ```
 
-## 研究改动
-
-网页保留原始 PSR 为主指标。原包的 14 个指标参与 PSR，但不同国家的可用集合不同。为检验这一问题，本轮另计算共同 8 项对照：选取 16 个路径经济体均覆盖、观测在 2020–2023 年的原有指标 A1、A4、B1、B2b、B3、C1、C2、C4。来自 6 个数据库；7 项观测为 2023 年，C1 为 2021 年。
-
-共同 8 项保留原百分位分数，取算术平均；它是替代口径的稳健性检验，不是在 PSR 的 14 项之外新增一项。固定指标集合提高了这组样本的口径一致性，但删去了 6 项，不能保持全部 PSR 概念覆盖，也不能自称比原 PSR 更正确。未重新采集原始记录，未重排百分位。
-
-路径差值为 alpha ×（中转地分数 − 目标市场分数），alpha 是假设暴露权重，默认 0.45。它是结构代理情景，不是实际路径损失、税率、原产地优势或未来风险概率。alpha 大于零时只能缩放差距，不能改变方向。
-
-美国目标下，越南、马来西亚、菲律宾的原始负差距在共同 8 项口径下变正；多国共同指标逐项剔除区间跨零。这反映结果对指标选择敏感，不代表现实风险发生变化，也不足以证明经东南亚一定更低风险。
-
-## 数据与证据层级
-
-| 层级 | 内容 | 本轮验证情况 |
-|---|---|---|
-| 原包输入 | 国别标准化分、原始字段、年份、元数据 | 提取并保留；原始采集未复现 |
-| 原计算 | 原 PSR 与旧路径结果 | 已用输入分数核算一致；不证明输入真实性 |
-| 本轮派生 | 固定8项平均、63路径、贡献与敏感性 | 附脚本，可复算 |
-| 官方政策事件 | 2023–2026官方文件与后续状态 | 保留时间、法律工具与URL；不作为税率查询 |
-| 投资情景 | 暴露权重与单位经营假设 | 明确为假设，不冒充观测 |
-
-## 政策时点
-
-核验日：2026-10-12。官方政策证据保存在 `assets/evidence.js`。2025年光伏 AD/CVD 终裁、orders 与2026年复审按状态链展示。CBP明确自2026-02-24停止相关IEEPA额外税征收；这不影响其他法律工具下的税费。2025年的40%条款不作为现行普遍税率。
-
-具体产品与企业的适用范围、原产地及进口日期需要另行核验。新加坡的结构筛选优势不能推导制造项目可行性；柬埔寨低结构分不等于不存在贸易救济风险。
-
-## 文件
-
-- `research/measurement.md`：指标、计算、反转结果与数学局限。
-- `research/audit.md`：研究审计、政策来源与投资尽调建议。
-- `research/original-data.json`：提取的原包输入，非本轮重新采集数据。
-- `scripts/derive.py`：派生计算。
-- `scripts/verify.py`：一致性与研究边界检查。
-- `scripts/build_single.py`：离线单文件构建。
-
-`report/output/` 已包含中文研究报告的可编辑 Word 与同版 PDF，共六页，含研究思路图、分析图表、方法、稳健性检验及参考文献。正式提交前，团队仍需对照主办方最新模板填写作者与参赛信息。
+以逐页 PNG 目视确认字体、公式、图表、分页后，将导出的 PDF 复制至 `output/`。`render/` 为内部排版校验文件。

@@ -1,0 +1,184 @@
+{
+  "asOf": "2026-10-12",
+  "scope": "美国市场 · 东南亚光伏案例与转运执法政策；定性证据层，不进入历史 PSR 分数。",
+  "events": [
+    {
+      "date": "2023-08-23",
+      "title": "东南亚四国光伏反规避终裁刊登",
+      "countries": [
+        "KHM",
+        "MYS",
+        "THA",
+        "VNM"
+      ],
+      "type": "反规避终裁",
+      "summary": "美国商务部认定，使用特定中国零部件、在四国完成加工后输美的部分光伏电池和组件规避了对华 AD/CVD 命令；公报同时规定例外与认证条件。",
+      "implication": "第三国加工并不自动消除贸易救济风险。评估项目应核对零部件来源、加工环节、生产商和认证资格。",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2023-08-23/html/2023-18161.htm",
+      "source": "美国商务部 · Federal Register 88 FR 57419",
+      "status": "已核实历史终裁；范围限于公报指定商品、生产条件及例外，不代表四国所有商品均违规。未据此生成 2026 现行税率。",
+      "nature": "已发生的官方裁定",
+      "references": []
+    },
+    {
+      "date": "2025-04-21",
+      "title": "四国光伏新的 AD/CVD 肯定性终裁公告",
+      "countries": [
+        "KHM",
+        "MYS",
+        "THA",
+        "VNM"
+      ],
+      "type": "反倾销 / 反补贴终裁",
+      "summary": "美国商务部宣布四国光伏电池的反倾销、反补贴肯定性终裁，并在反补贴调查中认定中国政府的跨国补贴。当时仍待 USITC 损害终裁。",
+      "implication": "即使在当地生产，项目仍可能受到针对东南亚原产商品的新贸易救济措施；应把原产地合规与 AD/CVD 风险分开审查。",
+      "url": "https://www.trade.gov/press-release/us-department-commerce-announces-final-determinations-antidumping-and-countervailing",
+      "source": "美国商务部 · International Trade Administration",
+      "status": "这是公告日期，正式终裁于 2025-04-25 刊登；后续于 2025-06-24 发布 orders。公告中的平均数字不等于任一企业当前适用税率。",
+      "nature": "已发生的调查终裁公告",
+      "references": [
+        {
+          "label": "后续反倾销命令",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2025-06-24/html/2025-11588.htm"
+        },
+        {
+          "label": "后续反补贴命令",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2025-06-24/html/2025-11589.htm"
+        }
+      ]
+    },
+    {
+      "date": "2025-06-24",
+      "title": "四国光伏 AD/CVD 命令发布",
+      "countries": [
+        "KHM",
+        "MYS",
+        "THA",
+        "VNM"
+      ],
+      "type": "贸易救济命令",
+      "summary": "在商务部与 USITC 肯定性最终裁定后，商务部发布四国光伏反倾销和反补贴命令；不同生产商、出口商、商品范围与进口日期有不同处理。",
+      "implication": "投资模型要落实到产品与生产商，而非把一个国别分数直接换算成税负。对美销售收益应纳入现金保证金、调查和复审情景。",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2025-06-24/html/2025-11588.htm",
+      "source": "美国商务部 · Federal Register 90 FR 26786 / 26791",
+      "status": "命令发布事实已核实。2026-08-10 官方公报已启动涉及四国的行政复审；启动复审不等于已得出新税率，本页不宣称税率已全面更新。",
+      "nature": "已发生的命令与后续复审程序",
+      "references": [
+        {
+          "label": "反补贴命令",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2025-06-24/html/2025-11589.htm"
+        },
+        {
+          "label": "2025-07-07 反倾销命令更正",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2025-07-07/html/2025-12573.htm"
+        },
+        {
+          "label": "2026-08-10 行政复审启动",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2026-08-10/html/2026-16265.htm"
+        }
+      ]
+    },
+    {
+      "date": "2025-07-31",
+      "title": "逃避关税的转运被纳入专门条款",
+      "countries": [
+        "USA",
+        "KHM",
+        "MYS",
+        "THA",
+        "VNM",
+        "SGP",
+        "IDN",
+        "PHL"
+      ],
+      "type": "历史转运执法政策",
+      "summary": "EO 14326 第 3 节规定，CBP 认定为逃避该令关税而转运的货物，适用 40% 的替代性额外从价税，并可伴随其他税费及罚则；对象并非所有正常转口贸易。",
+      "implication": "合规审查应关注交易目的、真实原产地、生产与运输记录，不能把“经过第三国”视作自动获得税率优惠。",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/07/further-modifying-the-reciprocal-tariff-rates/",
+      "source": "白宫 · Executive Order 14326 §3",
+      "status": "历史条款，不能作为当前 40% 税率使用。2026-02-24 已停止相关 IEEPA 额外从价税征收；一般关税、贸易救济与其他执法规则须另行核查。",
+      "nature": "历史行政命令；税收状态后续变化",
+      "references": [
+        {
+          "label": "2026 年停止征收实施通知",
+          "url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/40b11c9"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-24",
+      "title": "CBP 停止征收 IEEPA 额外从价税",
+      "countries": [
+        "USA",
+        "KHM",
+        "MYS",
+        "THA",
+        "VNM",
+        "SGP",
+        "IDN",
+        "PHL",
+        "CHN"
+      ],
+      "type": "政策状态变更",
+      "summary": "依据 2026-02-20 的 EO 14389，CBP 通知自 2 月 24 日起停止相关 IEEPA 额外从价税征收，范围含 EO 14257 及其修改；其他法律依据的税收措施不随之取消。",
+      "implication": "把政策时间线和法律依据纳入投资模型。2025 年税率表不能继续当作 2026 年现行税负，也不能据此推断所有关税和 AD/CVD 已取消。",
+      "url": "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/40b11c9",
+      "source": "美国 CBP · CSMS #67834313（2026-02-22 发布）",
+      "status": "这是通知指定的实施日期。已核实此项停止征收，未完成截至 2026-10-12 全部产品、企业与其他法律依据税项的现行税率核查。",
+      "nature": "已核实的实施状态变更",
+      "references": [
+        {
+          "label": "白宫 EO 14389 原文",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/02/ending-certain-tariff-actions/"
+        }
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "title": "先验证市场准入，再投入不可逆产能",
+      "basis": "四国光伏案例显示，第三国加工与新的贸易救济调查可以同时存在。",
+      "action": "在签土地、厂房和设备大额合同前，核对产品范围、生产商、关键零部件来源、加工记录与认证资格，并测算出现额外税负时的现金流。",
+      "confidence": "官方案例支持的项目审查原则；未估计未来触发概率。",
+      "urls": [
+        "https://www.govinfo.gov/content/pkg/FR-2023-08-23/html/2023-18161.htm",
+        "https://www.govinfo.gov/content/pkg/FR-2025-06-24/html/2025-11588.htm"
+      ]
+    },
+    {
+      "title": "低国别分数用于筛选候选地",
+      "basis": "原始快照中新加坡 PSR 为 33.37，越南为 53.87；但分值不包含产品、企业和贸易路径的实际税负。",
+      "action": "可以把较低分国家放入第二轮尽调，接着比较工艺可行性、客户需求、落地成本与路线合规，不能据此直接认定最优设厂地。",
+      "confidence": "基于交接数据的描述性筛选；不是收益预测。",
+      "urls": []
+    },
+    {
+      "title": "用多市场收入检验产能韧性",
+      "basis": "特定目标市场的贸易措施可能覆盖多个候选生产国，地理分散未必等于客户市场分散。",
+      "action": "在当地设厂的商业计划中单列当地、区域和美国收入；测算美国订单暂时失去时，其他客户能否覆盖固定成本，再决定分期扩产规模。",
+      "confidence": "从已发生政策案例推导的投资审查建议；盈利结果需企业数据验证。",
+      "urls": [
+        "https://www.govinfo.gov/content/pkg/FR-2025-06-24/html/2025-11588.htm"
+      ]
+    },
+    {
+      "title": "税负情景要带日期与法律依据",
+      "basis": "2025 年转运条款与 2026 年 IEEPA 停止征收呈现政策状态变化；行政复审也有独立程序。",
+      "action": "现金流模型逐项记录税种、商品范围、企业身份、有效日期和官方来源；建立基准、追加措施、订单中断三种情景，更新后再作投入决策。",
+      "confidence": "状态变化已有官方记录；具体项目税负仍需按产品核实。",
+      "urls": [
+        "https://content.govdelivery.com/accounts/USDHSCBP/bulletins/40b11c9",
+        "https://www.govinfo.gov/content/pkg/FR-2026-08-10/html/2026-16265.htm"
+      ]
+    }
+  ],
+  "caveats": [
+    "历史 PSR 与政策事件是两层证据：事件没有被重新编码进 2023 基准分数，也没有被任意加成到路线评分。",
+    "PSR 是可得指标的相对百分位合成值，不是政策冲击概率、关税百分比、预期损失或投资回报率。",
+    "路线情景差等于 α ×（中转地 PSR − 目标市场 PSR）；它是研究者设定权重下的机械比较，不能识别转口的因果效果。",
+    "国家指标覆盖与实际年份不同。菲律宾关税字段为 1992 年，美国贸易壁垒字段为 2013 年；缺失值与观测到的零事件不同。",
+    "美国光伏案例不能推广到全部东南亚国家或全部产品，也不说明所有第三国生产和正常转口均违规。",
+    "官方政策记录核实到 2026-10-12，但本页不是完整现行税率数据库；未核实的后续事项不被标作已生效或已结束。",
+    "复用了交接文件中的风险值；已核对路线公式与表内一致性，未声称原始采集、标准化与验证脚本已复现。"
+  ]
+}
